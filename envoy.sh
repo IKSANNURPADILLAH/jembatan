@@ -2,9 +2,9 @@
 set -euo pipefail
 
 # =====================[ KONFIGURASI YANG BISA DIOPTIONKAN ]====================
-LISTEN_PORT="${LISTEN_PORT:-443}"                             # port publik VPS
-TARGET_HOST="${TARGET_HOST:-sg.quai.herominers.com}"       # host tujuan
-TARGET_PORT="${TARGET_PORT:-1185}"                           # port tujuan
+LISTEN_PORT="${LISTEN_PORT:-80}"                             # port publik VPS
+TARGET_HOST="${TARGET_HOST:-de.cortex.herominers.com}"       # host tujuan
+TARGET_PORT="${TARGET_PORT:-1155}"                           # port tujuan
 ENVOY_IMAGE="${ENVOY_IMAGE:-envoyproxy/envoy:v1.31-latest}"  # image Envoy
 CONCURRENCY="${CONCURRENCY:-$(nproc)}"                       # worker = jumlah core
 NOFILE_LIMIT="${NOFILE_LIMIT:-200000}"                       # ulimit FD untuk banyak koneksi
